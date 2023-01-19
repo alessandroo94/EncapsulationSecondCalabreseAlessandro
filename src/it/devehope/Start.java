@@ -2,15 +2,22 @@ package it.devehope;
 
 import it.devehope.Person;
 
+import java.util.Scanner;
+
 public class Start {
     public static void main(String[] args) {
 
         Person person = new Person();
-        person.setName("Alessandro");
-        person.setSurname("Calabrese");
-        person.setHeight(72.0);
-        person.setAge(29);
+        Scanner input = new Scanner(System.in);
 
-        System.out.println("Name: " + person.getName() + " - Surname: " + person.getSurname() +  " - Height: " + person.getHeight() + "kg - Age: " + person.getAge());
+        String enterName = input.nextLine();
+        String enterSurname = input.nextLine();
+        double enterHeight = input.nextDouble();
+        int enterAge = input.nextInt();
+
+        System.out.println("Name: " + enterName);
+        System.out.println("Surname: " + enterSurname);
+        System.out.println("Height: " + enterHeight);
+        System.out.println("Age: " + enterAge);
     }
 }
