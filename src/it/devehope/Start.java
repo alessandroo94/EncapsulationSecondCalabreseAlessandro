@@ -10,14 +10,17 @@ public class Start {
         Person person = new Person();
         Scanner input = new Scanner(System.in);
 
-        String enterName = input.nextLine();
-        String enterSurname = input.nextLine();
-        double enterHeight = input.nextDouble();
-        int enterAge = input.nextInt();
+        System.out.println("Name: ");
+        person.setName(input.nextLine());
 
-        System.out.println("Name: " + enterName);
-        System.out.println("Surname: " + enterSurname);
-        System.out.println("Height: " + enterHeight);
-        System.out.println("Age: " + enterAge);
+        System.out.println("Surname: ");
+        person.setSurname(input.nextLine());
+
+        System.out.println("Height: ");
+        person.setHeight(input.nextDouble());
+
+        System.out.println("Age: " );
+        person.setAge(input.nextInt());
+
     }
 }
